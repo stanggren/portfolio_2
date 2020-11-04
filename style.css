@@ -1,0 +1,244 @@
+:root {
+    --background: #F4F3F2; 
+    --primaryColor: #313335;
+    --link: rgb(0, 146, 0);
+    --linkHover: rgb(248, 149, 0);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+body {
+    background: #F4F3F2;
+}
+
+ul {
+    list-style: none;
+}
+
+ /* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 5%;
+    left: 3%;
+}
+
+.menu{
+    font-size: 1rem;
+}
+
+.menu > * {
+    padding: 0.5rem;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+/* about */
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    height: 2rem;
+    border-radius: 0.2rem;
+    padding: 5rem 25rem 5rem 0rem;
+    /* margin-bottom: 10rem;
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); */
+}
+
+.about-wrapper h2{
+    padding-bottom: 1rem;
+}
+
+.about-wrapper > * {
+    width: 21rem;
+    /* text-shadow: 0 1px 3px rgba(0,0,0,0.1); */
+}
+
+.slideshow-container {
+    position: relative;
+    width: 55rem;
+    height: 20rem;
+    border-radius: 0.2rem;
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.1.5); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.1.5);
+}
+
+.slideshow-container > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.2rem;
+}
+
+.slideshow-container .show {
+    opacity: 1;
+}
+
+.logo-container{
+    display: flex;
+    position: absolute;
+    background: none;
+    padding: 22rem 0rem 0rem 44rem;
+}
+
+.logo-container > * {
+    color: black;
+    background: none;
+    font-size: 4rem;
+    font-weight: 300!important;
+    /* color:green;
+    font-weight: 500!important;
+    font-size: 8rem; */
+    margin-top: 1.5rem;
+    letter-spacing: -1rem;
+}
+
+.logo-container h2:nth-child(2){
+    color: black!important;
+    font-size: 6rem;
+    font-weight: 200!important;
+    margin-top: 0rem;
+    margin-left: 0.2rem;
+}
+
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: #F4F3F2;
+    margin-top: 10rem;
+}
+
+
+
+.arrow{
+    transform: rotate(90deg);
+    font-size: 2.5rem;
+    letter-spacing: -0.4rem;
+    margin-bottom: 10rem;
+}
+
+/* skills */
+
+.skills-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    width: fit-content;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
+}
+
+.skills-wrapper h2{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.skills-lists{
+    display: flex;
+    border-radius: 0.3rem;
+}
+
+.skills-lists ul{
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.skills-lists li:first-child{
+    padding-bottom: 1rem;
+    font-weight: 800;
+}
+
+/* projects */
+.articles-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
+
+    padding: 3rem;
+    margin-bottom: 10rem;
+}
+
+.articles-wrapper h2{
+    padding-bottom: 3rem;
+}
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    width: 50rem;
+    border-bottom: 1px dashed black;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article img {
+    width: 20rem;
+    height: 10rem;
+    align-self: center;
+    border-radius: 0.2rem;
+    margin-right: 1rem;
+}
+
+.article-text {
+    align-self: flex-start;
+}
+
+.article-text h3{
+    padding-bottom: 0.5rem;
+}
+
+.article-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.article-text ul li {
+    margin-right: 0.5rem;
+}
+
+.article-text ul li:first-child{
+    font-weight: 600;
+}
+
+.article-text a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(0, 146, 0);
+}
+
+.article-text a:hover{
+    color: rgb(248, 149, 0);
+}
