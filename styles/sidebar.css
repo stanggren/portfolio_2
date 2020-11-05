@@ -1,0 +1,14 @@
+ /* SIDEBAR */
+ .sidebar {
+    position: fixed;
+    top: 5%;
+    left: 3%;
+}
+
+.menu{
+    font-size: 1rem;
+}
+
+.menu > * {
+    padding: 0.5rem;
+}

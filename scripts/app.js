@@ -81,6 +81,7 @@ let link
 let elementList = [];
 
 
+
 /**
  * Loops through project object list.
  * Calls functions to create HTML elements, set variables and set content of HTML elements
@@ -186,6 +187,7 @@ function setElementVariables(element){
 function setElementContent(project, element){
     switch(element.nodeName) {
         case 'IMG':
+            element.onclick = (function() {showModal(project.title)})
             element.alt = project.alt;
             element.src = project.imgSrc;
             break;
@@ -211,6 +213,7 @@ function setElementStructure(articleCount){
     const articles = document.getElementById('articles');
     articles.appendChild(article);
 
+    //By using unique IDs the children will only append to one parent.
     article = document.getElementById(`article${articleCount + 1}`);
     article.appendChild(img);
     article.appendChild(textWrapper);

@@ -1,0 +1,118 @@
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: #F4F3F2;
+    margin-top: 10rem;
+}
+
+
+
+.arrow{
+    transform: rotate(90deg);
+    font-size: 2.5rem;
+    letter-spacing: -0.4rem;
+    margin-bottom: 10rem;
+}
+
+/* skills */
+
+.skills-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    width: fit-content;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
+}
+
+.skills-wrapper h2{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.skills-lists{
+    display: flex;
+    border-radius: 0.3rem;
+}
+
+.skills-lists ul{
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.skills-lists li:first-child{
+    padding-bottom: 1rem;
+    font-weight: 800;
+}
+
+/* projects */
+.articles-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
+
+    padding: 3rem;
+    margin-bottom: 10rem;
+}
+
+.articles-wrapper h2{
+    padding-bottom: 3rem;
+}
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    width: 50rem;
+    border-bottom: 1px dashed var(--primary-color);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.article:last-child{
+    border-bottom: none;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+
+.article img {
+    width: 20rem;
+    height: 10rem;
+    align-self: center;
+    border-radius: 0.2rem;
+    margin-right: 1rem;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 100%;
+}
+
+.article-text p {
+    flex-grow: 1;
+}
+
+.article-text h3{
+    padding-bottom: 0.5rem;
+}
+
+.article-text a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(0, 146, 0);
+}
+
+.article-text a:hover{
+    color: rgb(248, 149, 0);
+}
