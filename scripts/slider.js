@@ -1,14 +1,3 @@
-// if function does not have 
-window.onload = main;
-
-/**
- * Init program
- */
-function main() {
-    startSlideShowAnimation();
-    renderProject();
-}
-
 function startSlideShowAnimation(){
     setInterval(changeActiveImage, 4000)
     changeActiveImage();
@@ -37,4 +26,3 @@ function changeActiveImage() {
         }
     }
 }
-
