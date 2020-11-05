@@ -20,3 +20,14 @@ body {
 ul {
     list-style: none;
 }
+
+@keyframes shadowOpacity {
+    from {
+        -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.0); 
+        box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.0);
+    }
+    to {
+        -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+        box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
+    }
+}
