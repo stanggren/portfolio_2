@@ -1,8 +1,8 @@
 :root {
     --background: #F4F3F2; 
-    --primaryColor: #313335;
-    --link: rgb(0, 146, 0);
-    --linkHover: rgb(248, 149, 0);
+    --primary-color: #313335;
+    --link-color: rgb(0, 146, 0);
+    --link-color-hover: rgb(248, 149, 0);
 }
 
 *{
@@ -197,9 +197,15 @@ main {
 .article {
     display: flex;
     width: 50rem;
-    border-bottom: 1px dashed black;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    border-bottom: 1px dashed var(--primary-color);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.article:last-child{
+    border-bottom: none;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
 }
 
 .article img {
@@ -211,26 +217,18 @@ main {
 }
 
 .article-text {
+    display: flex;
+    flex-direction: column;
     align-self: flex-start;
+    height: 100%;
+}
+
+.article-text p {
+    flex-grow: 1;
 }
 
 .article-text h3{
     padding-bottom: 0.5rem;
-}
-
-.article-text ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.article-text ul li {
-    margin-right: 0.5rem;
-}
-
-.article-text ul li:first-child{
-    font-weight: 600;
 }
 
 .article-text a {

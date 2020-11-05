@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script defer src="scripts/app.js"></script>
     <script defer src="script.js"></script>
     <title>AS - Portfolio</title>
 </head>
@@ -24,7 +25,7 @@
         </div>
         <div class="slideshow-container">
             <img class="show" src="/images/cropped/dashboard-c.jpg" alt="dashboard">
-            <img src="/images/dice-game.png" alt="dice game">
+            <img src="/images/modals/dice-game.png" alt="dice game">
             <img src="/images/cropped/planet-jumper-c.jpg" alt="Planet Jumper">
             <img src="/images/cropped/recipe-search-c.png" alt="Recipe search">
         </div>
@@ -59,68 +60,8 @@
         </div>
         <div class="articles-wrapper">
             <h2>Projects</h2>
-            <div class="articles">
-
-            </div>
-            <div class="article">
-                <img alt="dashboard" src="/images/thumbnails/dashboard-tn.png">
-                <div class="article-text">
-                    <h3>Dashboard</h3>
-                    <p>A dashboard which consumes data from a document database and displays it through charts and tables. The dashboard also includes a date picker where the user can set a desired times pan for the data to be displayed in.</p>
-                    <ul>
-                        <li>Tools:</li>
-                        <li>C# (ASP.NET),</li>
-                        <li>Vue.js (Vuex),</li>
-                        <li>HTML,</li>
-                        <li>CSS, </li>
-                        <li>Elasticsearch,</li>
-                        <li>Highcharts,</li>
-                        <li>GIT</li>
-                    </ul>
-                    <a href="/">Repo</a>
-                </div>
-            </div>
-            <div class="article">
-                <img src="/images/modals/planet-jumper.png" alt="Recipe search">
-                <div class="article-text">
-                    <h3>Recipe Search</h3>
-                    <p>Using an API from Edamam the user can search recipes and tick off ingredients from each recipe.</p>
-                    <ul>
-                        <li>Tools:</li>
-                        <li>React.JS,</li>
-                        <li>HTML,</li>
-                        <li>CSS</li>
-                    </ul>
-                    <a href="/">Repo</a>
-                </div>
-            </div>
-            <div class="article">
-                <img alt="dice game" src="/images/dice-game.png">
-                <div class="article-text">
-                    <h3>Dice Game</h3>
-                    <p>DOM game. The game has two players. In each turn a palyer rools a dice as many times as they wish. Each result gets added to their round score. First player to reach winning score wins the game.</p>
-                    <ul>
-                        <li>Tools:</li>
-                        <li>JavaScript,</li>
-                        <li>HTML,</li>
-                        <li>CSS</li>
-                    </ul>
-                    <a href="/">Repo</a>
-                </div>
-            </div>
-            <div class="article">
-                <img src="/images/planet-jumper.png" alt="Planet Jumper">
-                <div class="article-text">
-                    <h3>Planet Jumper</h3>
-                    <p>Simple DOM point and click adventure. Travel the solar system to solve the energy crisis of your planet. Save your planet by finding a battery. Travel to other planets by clicking on them. Find clues and items to get you closer of finding that battery.</p>
-                    <ul>
-                        <li>Tools:</li>
-                        <li>JavaScript,</li>
-                        <li>HTML,</li>
-                        <li>CSS</li>
-                    </ul>
-                    <a href="/">Repo</a>
-                </div>
+            <div id="articles" class="articles">
+       
             </div>
         </div>
     </main>

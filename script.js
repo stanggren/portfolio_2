@@ -1,14 +1,12 @@
 // if function does not have 
 window.onload = main;
 
-function getAllPlayers() {
-    return players
-}
 /**
  * Init program
  */
 function main() {
     startSlideShowAnimation();
+    renderProject();
 }
 
 function startSlideShowAnimation(){
