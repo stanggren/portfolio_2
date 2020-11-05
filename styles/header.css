@@ -4,7 +4,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 15rem;
+    padding-top: 20rem;
+    color: var(--primary-color);
 }
 
 /* about */
@@ -12,10 +13,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: fit-content;
     height: 2rem;
     border-radius: 0.2rem;
-    padding: 5rem 25rem 5rem 0rem;
+    padding: 0rem 10rem 6rem 0rem;
     /* margin-bottom: 10rem;
     -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
     box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); */
@@ -23,10 +23,12 @@ header {
 
 .about-wrapper h2{
     padding-bottom: 1rem;
+    font-size: 2.5rem;
 }
 
 .about-wrapper > * {
-    width: 21rem;
+    font-size: 1.5rem;
+    width: 39rem;
     /* text-shadow: 0 1px 3px rgba(0,0,0,0.1); */
 }
 
@@ -60,11 +62,11 @@ header {
     display: flex;
     position: absolute;
     background: none;
-    padding: 22rem 0rem 0rem 44rem;
+    padding: 18rem 0rem 0rem 44rem;
 }
 
 .logo-container > * {
-    color: black;
+    color: var(--primary-color);
     background: none;
     font-size: 4rem;
     font-weight: 300!important;
@@ -76,7 +78,6 @@ header {
 }
 
 .logo-container h2:nth-child(2){
-    color: black!important;
     font-size: 6rem;
     font-weight: 200!important;
     margin-top: 0rem;
