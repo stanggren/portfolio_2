@@ -1,24 +1,26 @@
 /* MAIN */
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background: #F4F3F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F4F3F2;
 }
 
 /* svg */
 
 .svg-container {
-    height: 30rem;
-    width: 30rem;
-    margin: 20rem 0rem 20rem 0rem;
-    opacity: 0;
-    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
-    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
-    padding: 1rem 2rem 1rem 2rem;
-    border-radius: 0.3rem; 
+  height: 18rem;
+  width: 18rem;
+  margin: 20rem 0rem 3rem 0rem;
+  opacity: 0;
+  -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+  box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 100%; 
+  background: #ffc081;
+  opacity: 0;
+  transition: opacity 2.5s;
 }
 
 .path {
@@ -70,7 +72,7 @@ main {
 .skills-wrapper{
     display: flex;
     flex-direction: column;
-    margin: 20rem 0rem 20rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
     width: fit-content;
     border-radius: 0.3rem;
     -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
@@ -98,6 +100,7 @@ main {
 }
 
 /* projects */
+
 .articles-wrapper{
     display: flex;
     flex-direction: column;
@@ -146,8 +149,6 @@ main {
 .article-text {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
-    height: 100%;
 }
 
 .article-text p {
@@ -161,9 +162,10 @@ main {
 .article-text a {
     text-decoration: none;
     font-weight: 500;
-    color: rgb(0, 146, 0);
+    color: var(--link-color);
+    width: fit-content;
 }
 
 .article-text a:hover{
-    color: rgb(248, 149, 0);
+    color: var(--link-color-hover);
 }

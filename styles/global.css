@@ -1,8 +1,9 @@
 :root {
     --background: #F4F3F2; 
     --primary-color: #313335;
-    --link-color: rgb(0, 146, 0);
-    --link-color-hover: rgb(248, 149, 0);
+    --secondary-color: #f17900;
+    --link-color: #f17900;
+    --link-color-hover: rgb(85, 189, 0);
 }
 
 *{
