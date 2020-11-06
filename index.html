@@ -27,7 +27,9 @@
 
     <title>AS - Portfolio</title>
   </head>
+  
   <body>
+
     <div class="sidebar">
       <ul id="sidebar-list" class="menu">
         <li id="header">A/S</li>
@@ -36,32 +38,32 @@
         <li id="contact">Contact</li>
       </ul>
     </div>
-    <header>
-      <div class="about-wrapper">
+
+    <header class="flex-column">
+      <div class="about-wrapper flex-column">
         <h2>I'm Andreas Stanggren -</h2>
         <p>
           A Gothenburg based web developer with a passion in design and neat
           user interfaces.
         </p>
       </div>
+
       <div class="slideshow-container">
-        <img
-          class="show"
-          src="/images/cropped/dashboard-c.jpg"
-          alt="dashboard"
-        />
+        <img class="show" src="/images/cropped/dashboard-c.jpg" alt="dashboard"/>
         <img src="/images/modals/dice-game.png" alt="dice game" />
-        <img src="/images/cropped/planet-jumper-c.jpg" alt="Planet Jumper" />
+        <img class="dark" src="/images/cropped/planet-jumper-c.jpg" alt="Planet Jumper" />
         <img src="/images/cropped/recipe-search-c.png" alt="Recipe search" />
       </div>
-      <div class="logo-container">
+
+      <div id="logo-container" class="logo-container">
         <h2>A</h2>
         <h2>/</h2>
         <h2>S</h2>
       </div>
     </header>
-    <main>
-      <div id="svg-container" class="svg-container">
+
+    <main class="flex-column">
+      <div id="svg-container" class="svg-container container-shadow">
         <svg
           version="1.1"
           id="Layer_1"
@@ -79,183 +81,88 @@
           />
             <path
               class=""
-              style="
-                fill: none;
-                stroke: #F4F3F2;
-                stroke-width: 8;
-                stroke-miterlimit: 10;
-              "
-              d="M132.573,587.123
-            c74.659-162.667,139.986-179.662,222.811-281.633S481.372,42.066,481.372,42.066"
+              style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+              d="M132.573,587.123 c74.659-162.667,139.986-179.662,222.811-281.633S481.372,42.066,481.372,42.066"
             />
           <path
             class="leaf4-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M435.436,275.735
-        c-11.103,12.398,2.77,40.463,27.391,61.042s59.797,3.085,59.797,3.085"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M435.436,275.735 c-11.103,12.398,2.77,40.463,27.391,61.042s59.797,3.085,59.797,3.085"
           />
           <path
             class="leaf4-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M435.436,275.735
-        c7.081-8.177,37.82-9.483,63.365,9.937c25.466,19.36,21.629,53.758,21.463,56.915"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M435.436,275.735 c7.081-8.177,37.82-9.483,63.365,9.937c25.466,19.36,21.629,53.758,21.463,56.915"
           />
           <path
             class="line4-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M405.144,230.775
-        c17.28,50.611,30.46,44.499,30.46,44.499"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M405.144,230.775 c17.28,50.611,30.46,44.499,30.46,44.499"
           />
           <path
             class="leaf2-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M267.951,471.842
-        c-12.335,11.174-1.461,40.531,20.881,63.564c22.342,23.033,59.15,9.3,59.15,9.3"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M267.951,471.842 c-12.335,11.174-1.461,40.531,20.881,63.564c22.342,23.033,59.15,9.3,59.15,9.3"
           />
           <path
             class="leaf2-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M267.951,471.842
-        c7.894-7.395,38.603-5.49,61.984,16.486c23.31,21.908,15.91,55.719,15.415,58.842"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M267.951,471.842 c7.894-7.395,38.603-5.49,61.984,16.486c23.31,21.908,15.91,55.719,15.415,58.842"
           />
           <path
             class="line2-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M242.509,423.97
-        c11.912,52.137,25.657,47.43,25.657,47.43"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M242.509,423.97 c11.912,52.137,25.657,47.43,25.657,47.43"
           />
           <path
             class="leaf5-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M415.44,99.332
-        c11.408-12.118-1.762-40.519-25.862-61.705s-59.702-4.573-59.702-4.573"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M415.44,99.332 c11.408-12.118-1.762-40.519-25.862-61.705s-59.702-4.573-59.702-4.573"
           />
           <path
             class="leaf5-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M415.44,99.332
-        c-7.282,7.998-38.045,8.538-63.098-11.512c-24.976-19.988-20.284-54.279-20.039-57.432"
+            style=" fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M415.44,99.332 c-7.282,7.998-38.045,8.538-63.098-11.512c-24.976-19.988-20.284-54.279-20.039-57.432"
           />
           <path
             class="line5-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M444.604,145.032
-        c-16.015-51.026-29.342-45.243-29.342-45.243"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M444.604,145.032 c-16.015-51.026-29.342-45.243-29.342-45.243"
           />
           <path
             class="leaf3-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M300.39,293.887
-        c12.902-10.514,3.578-40.399-17.529-64.568c-21.107-24.169-58.583-12.379-58.583-12.379"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M300.39,293.887 c12.902-10.514,3.578-40.399-17.529-64.568c-21.107-24.169-58.583-12.379-58.583-12.379"
           />
           <path
             class="leaf3-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M300.39,293.887
-        c-8.27,6.972-38.837,3.465-61.038-19.704c-22.133-23.097-12.975-56.474-12.318-59.567"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M300.39,293.887 c-8.27,6.972-38.837,3.465-61.038-19.704c-22.133-23.097-12.975-56.474-12.318-59.567"
           />
           <path
             class="line3-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M323.294,343.023
-        c-9.17-52.688-23.142-48.707-23.142-48.707"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M323.294,343.023 c-9.17-52.688-23.142-48.707-23.142-48.707"
           />
           <path
             class="leaf1-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M134.519,481.989
-        c12.131-11.395,0.729-40.551-22.025-63.176s-59.309-8.23-59.309-8.23"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M134.519,481.989 c12.131-11.395,0.729-40.551-22.025-63.176s-59.309-8.23-59.309-8.23"
           />
           <path
             class="leaf1-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M134.519,481.989
-        c-7.759,7.536-38.497,6.186-62.272-15.364c-23.702-21.484-16.913-55.422-16.475-58.554"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M134.519,481.989 c-7.759,7.536-38.497,6.186-62.272-15.364c-23.702-21.484-16.913-55.422-16.475-58.554"
           />
           <path
             class="line1-delay"
-            style="
-              fill: none;
-              stroke: #F4F3F2;
-              stroke-width: 8;
-              stroke-miterlimit: 10;
-            "
-            d="M160.822,529.393
-        c-12.852-51.913-26.509-46.959-26.509-46.959"
+            style="fill: none;stroke: #F4F3F2;stroke-width: 8;stroke-miterlimit: 10;"
+            d="M160.822,529.393 c-12.852-51.913-26.509-46.959-26.509-46.959"
           />
         </svg>
       </div>
-      <div id="skills-wrapper" class="skills-wrapper">
+
+      <div id="skills-wrapper" class="skills-wrapper container-radius container-shadow">
         <h2>Skills</h2>
         <div class="skills-lists">
           <ul>
@@ -276,13 +183,15 @@
           </ul>
         </div>
       </div>
-      <div id="articles-wrapper" class="articles-wrapper">
+
+      <div id="articles-wrapper" class="articles-wrapper container-radius container-shadow">
         <h2>Projects</h2>
         <div id="articles" class="articles"></div>
       </div>
     </main>
-    <footer>
-        <div id="contact-wrapper" class="contact-wrapper">
+
+    <footer class="flex-column">
+        <div id="contact-wrapper" class="contact-wrapper container-radius container-shadow">
             <h2>Contact</h2>
             <div class="contact-links">
                 <a href="">Github</a>
@@ -291,11 +200,13 @@
             </div>
         </div>
     </footer>
+
     <div id="myModal" class="modal">
       <div class="modal-content">
         <p id="modal-title"></p>
         <img id="modal-img" />
       </div>
     </div>
+
   </body>
 </html>

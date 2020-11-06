@@ -50,12 +50,6 @@ $(window).on("scroll", function(){
     } 
 })
 
-// $('#skills').on('click', function() {
-//     var body = $("html, body");
-//     body.stop().animate({scrollTop:$('skills').offset().top}, '600');
-// })
-
-
 $("#skills").click(function() {
     $('html,body').animate({
         scrollTop: $("#svg-container").offset().top},

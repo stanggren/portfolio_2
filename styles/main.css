@@ -1,8 +1,6 @@
 /* MAIN */
 
 main {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background: #F4F3F2;
 }
@@ -14,8 +12,6 @@ main {
   width: 18rem;
   margin: 20rem 0rem 3rem 0rem;
   opacity: 0;
-  -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
-  box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
   padding: 2rem 2rem 1rem 2rem;
   border-radius: 100%; 
   background: #ffc081;
@@ -72,11 +68,7 @@ main {
 .skills-wrapper{
     display: flex;
     flex-direction: column;
-    margin: 0rem 0rem 0rem 0rem;
     width: fit-content;
-    border-radius: 0.3rem;
-    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
-    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
     opacity: 0;
     transition: opacity 2s;
 }
@@ -104,9 +96,6 @@ main {
 .articles-wrapper{
     display: flex;
     flex-direction: column;
-    border-radius: 0.3rem;
-    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
-    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
     margin: 20rem 0rem 20rem 0rem;
     padding: 3rem;
     opacity: 0;

@@ -1,7 +1,5 @@
 /* HEADER */
 header {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 20rem;
@@ -10,15 +8,10 @@ header {
 
 /* about */
 .about-wrapper{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     height: 2rem;
-    border-radius: 0.2rem;
     padding: 0rem 10rem 6rem 0rem;
-    /* margin-bottom: 10rem;
-    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
-    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); */
+    border-radius: 0.2rem;
 }
 
 .about-wrapper h2{
@@ -27,9 +20,8 @@ header {
 }
 
 .about-wrapper > * {
-    font-size: 1.5rem;
     width: 39rem;
-    /* text-shadow: 0 1px 3px rgba(0,0,0,0.1); */
+    font-size: 1.5rem;
 }
 
 .slideshow-container {
@@ -37,8 +29,8 @@ header {
     width: 55rem;
     height: 20rem;
     border-radius: 0.2rem;
-    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.1.5); 
-    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.1.5);
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
 }
 
 .slideshow-container > img {
@@ -70,9 +62,6 @@ header {
     background: none;
     font-size: 4rem;
     font-weight: 300!important;
-    /* color:green;
-    font-weight: 500!important;
-    font-size: 8rem; */
     margin-top: 1.5rem;
     letter-spacing: -1rem;
 }

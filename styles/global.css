@@ -1,5 +1,5 @@
 :root {
-    --background: #F4F3F2; 
+    --background-color: #F4F3F2; 
     --primary-color: #313335;
     --secondary-color: #f17900;
     --link-color: #f17900;
@@ -15,11 +15,33 @@
 }
 
 body {
-    background: #F4F3F2;
+    background: var(--background-color);
 }
 
 ul {
     list-style: none;
+}
+
+
+/* REUSABLE */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-radius{
+    border-radius: 0.3rem;
+}
+
+.container-shadow{
+    -webkit-box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15); 
+    box-shadow: 4px 4px 14px 0px rgba(0,0,0,0.15);
 }
 
 @keyframes shadowOpacity {

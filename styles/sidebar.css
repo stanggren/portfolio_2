@@ -1,4 +1,5 @@
  /* SIDEBAR */
+ 
  .sidebar {
     position: fixed;
     top: 5%;
@@ -14,5 +15,5 @@
 }
 
 #header {
-    color: #f17900;
+    color: var(--secondary-color);
 }

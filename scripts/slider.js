@@ -5,24 +5,30 @@ function startSlideShowAnimation(){
 
 function changeActiveImage() {
     const images = document.querySelectorAll('.slideshow-container > img');
-    // const currentImage = images.find(img => img ) 
-
     for (let i = 0; i < images.length; i++){
         if (images[i].classList.contains('show')) {
             images[i].classList.remove('show');
 
-
-            // go to first image
-            // modulus 4 (fyra bilder)
-            // modulus 3 (tre bilder)
             let nextIndex = (i + 1) % images.length;
-            // if (nextIndex >= images.length) {
-                
-            //     nextIndex = 0;
-            // }
 
             images[nextIndex].classList.add('show');
+
+            if(images[nextIndex].classList.contains('dark')){
+                setLogoColor('#F4F3F2')
+            }
+            else {
+                setLogoColor('#313335')
+            }
             break;
         }
     }
+}
+
+function setLogoColor(color){
+    const elementList = document.getElementById('logo-container').childNodes;
+
+    for (let i = 1; i < elementList.length; i+=2 ){
+        elementList[i].style.color = color;
+    }
+    
 }
