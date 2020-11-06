@@ -12,3 +12,7 @@
 .menu > * {
     padding: 0.5rem;
 }
+
+#header {
+    color: #f17900;
+}

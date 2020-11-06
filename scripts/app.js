@@ -19,28 +19,62 @@ function displaySection(id) {
 
 function getScrollTop(){
     return pageYOffset;
-} 
+}
+
+$(window).on("scroll", function(){
+    if(getScrollTop() >= 0){
+        highlightText('header');
+    } 
+})
 
 $(window).on("scroll", function(){
     if(getScrollTop() >= 600){
-    //   $(window).off("scroll");
         displaySVG();
         displaySection('svg-container');
         displaySection('skills-wrapper');
+        highlightText('skills');
     } 
 })
 
 $(window).on("scroll", function(){
     if(getScrollTop() >= 1800){
         displaySection('articles-wrapper');
+        highlightText('projects');
     } 
 })
 
 $(window).on("scroll", function(){
     if(getScrollTop() >= 2350){
         displaySection('contact-wrapper');
+        highlightText('contact');
     } 
 })
+
+// $('#skills').on('click', function() {
+//     var body = $("html, body");
+//     body.stop().animate({scrollTop:$('skills').offset().top}, '600');
+// })
+
+
+$("#skills").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#svg-container").offset().top},
+        'slow');
+});
+
+$("#projects").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#articles-wrapper").offset().top},
+        'slow');
+});
+
+$("#contact").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#contact-wrapper").offset().top},
+        'slow');
+});
+
+
 
 
 
