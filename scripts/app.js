@@ -37,7 +37,7 @@ $(window).on("scroll", function(){
 })
 
 $(window).on("scroll", function(){
-    if(getScrollTop() >= 1800){
+    if(getScrollTop() >= 1600){
         displaySection('articles-wrapper');
         highlightText('projects');
     } 
