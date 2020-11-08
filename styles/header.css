@@ -72,3 +72,36 @@ header {
     margin-top: 0rem;
     margin-left: 0.2rem;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 910px) {
+    .about-wrapper{
+        justify-content: center;
+        height: 2rem;
+        padding: 0rem 0rem 0rem 0rem;
+        margin-bottom: 5rem;
+    }
+    .about-wrapper h2{
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .about-wrapper > * {
+        width: 22rem;
+        font-size: 1rem;
+        align-items: center;
+    }
+
+    .slideshow-container {
+        width: 27rem;
+        height: 15rem;
+    }
+
+    .logo-container{
+        display: flex;
+        position: absolute;
+        background: none;
+        padding: 18rem 0rem 0rem 44rem;
+    }
+}

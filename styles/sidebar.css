@@ -1,5 +1,5 @@
  /* SIDEBAR */
- 
+
  .sidebar {
     position: fixed;
     top: 5%;
@@ -14,6 +14,19 @@
     padding: 0.5rem;
 }
 
+.menu > *:hover{
+    cursor:pointer;
+}
+
 #header {
     color: var(--secondary-color);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 910px) {
+    .sidebar {
+        position: absolute;
+        top: 2%;
+    }
 }

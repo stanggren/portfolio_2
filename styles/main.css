@@ -66,95 +66,186 @@ main {
 /* skills */
 
 .skills-wrapper{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    opacity: 0;
-    transition: opacity 2s;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  opacity: 0;
+  transition: opacity 2s;
 }
 
 .skills-wrapper h2{
-    padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .skills-lists{
-    display: flex;
-    border-radius: 0.3rem;
+  display: flex;
+  border-radius: 0.3rem;
 }
 
 .skills-lists ul{
-    padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .skills-lists li:first-child{
-    padding-bottom: 1rem;
-    font-weight: 800;
+  padding-bottom: 1rem;
+  font-weight: 800;
 }
 
 /* projects */
 
 .articles-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 20rem 0rem 20rem 0rem;
+  padding: 3rem;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.articles-wrapper h2{
+  padding-bottom: 3rem;
+}
+
+.articles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  width: 50rem;
+  border-bottom: 1px dashed var(--primary-color);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.article:last-child{
+  border-bottom: none;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+}
+
+.article img {
+  width: 20rem;
+  height: 10rem;
+  align-self: center;
+  border-radius: 0.2rem;
+  margin-right: 1rem;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-text p {
+  flex-grow: 1;
+}
+
+.article-text h3{
+  padding-bottom: 0.5rem;
+}
+
+.article-text a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--link-color);
+  width: fit-content;
+}
+
+.article-text a:hover{
+  color: var(--link-color-hover);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:940px) {
+  .articles-wrapper{
     display: flex;
     flex-direction: column;
     margin: 20rem 0rem 20rem 0rem;
     padding: 3rem;
     opacity: 0;
     transition: opacity 2s;
-}
+  }
 
-.articles-wrapper h2{
-    padding-bottom: 3rem;
-}
-
-.articles{
+  .article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.article {
-    display: flex;
-    width: 50rem;
+    width: 30rem;
     border-bottom: 1px dashed var(--primary-color);
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-}
+  }
 
-.article:last-child{
-    border-bottom: none;
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
-}
-
-.article img {
+  .article img {
     width: 20rem;
-    height: 10rem;
-    align-self: center;
+    height: 12rem;
+    align-self: flex-start;
     border-radius: 0.2rem;
-    margin-right: 1rem;
+    margin-right: 0rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
-.article-text {
+@media screen and (max-width: 910px) {
+  .svg-container {
+    height: 12rem;
+    width: 12rem;
+    /* margin: 20rem 0rem 3rem 0rem;
+    opacity: 0;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 100%; 
+    background: #ffc081;
+    opacity: 0;
+    transition: opacity 2.5s; */
+  }
+
+  .skills-wrapper{
+    width: 24rem;
+  }
+
+  .skills-lists{
     display: flex;
     flex-direction: column;
+  }
+
+  .skills-lists li{
+    font-size: 0.9rem;
+  }
+
 }
 
-.article-text p {
-    flex-grow: 1;
-}
+@media screen and (max-width: 605px) {
+  .skills-wrapper{
+    width: 20rem;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .articles-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 20rem 0rem 20rem 0rem;
+    padding: 3rem;
+    opacity: 0;
+    transition: opacity 2s;
+    border: none;
+    box-shadow: none;
+  }
 
-.article-text h3{
-    padding-bottom: 0.5rem;
-}
+  .article > * {
+    font-size: 0.9rem;
+  }
 
-.article-text a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--link-color);
-    width: fit-content;
-}
-
-.article-text a:hover{
-    color: var(--link-color-hover);
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    border-bottom: 1px dashed var(--primary-color);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
 }
