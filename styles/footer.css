@@ -42,11 +42,10 @@ footer {
 
 @media screen and (max-width: 605px) {
     footer {
-        align-items: flex-start;
     }
     
     .contact-wrapper {
-        padding: 0rem 0rem 0rem 2rem;
+        align-items: center;
         border: none;
         box-shadow: none;
     }

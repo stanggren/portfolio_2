@@ -24,7 +24,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1165px) {
     .sidebar {
         position: absolute;
         top: 2%;

@@ -240,6 +240,10 @@ main {
     font-size: 0.9rem;
   }
 
+  .article img {
+    pointer-events: none;
+  }
+
   .article {
     display: flex;
     flex-direction: column;

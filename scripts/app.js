@@ -11,10 +11,6 @@ function main() {
 function displaySection(id) {
     const element = document.getElementById(id);
     element.style.opacity = "1";
-    // wrapper.style.animation = "shadowOpacity 7s"
-    // for (let i = 1; i < parent.childNodes.length; i+=2 ){
-    //     parent.childNodes[i].classList.add("path");
-    // }
 }
 
 function getScrollTop(){
