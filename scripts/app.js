@@ -8,6 +8,10 @@ function main() {
     renderProject();
 }
 
+/**
+ * 
+ * @param {String} id  
+ */
 function displaySection(id) {
     const element = document.getElementById(id);
     element.style.opacity = "1";
