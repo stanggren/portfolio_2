@@ -69,6 +69,15 @@ $(window).on("scroll", function(){
 })
 
 /**
+ * On click event (sidebar). Scrolls down to header wrapper
+ */
+$("#header").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#header-wrapper").offset().top},
+        'slow');
+});
+
+/**
  * On click event (sidebar). Scrolls down to skills wrapper
  */
 $("#skills").click(function() {
