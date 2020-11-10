@@ -10,4 +10,4 @@ Built with vanilla JS, HTML and CSS. Hosted on github pages.
 
 ## Demo
 
-Click [here](https://stanggren.github.io/planet-jumper/)
+Click [here](https://stanggren.github.io/portfolio_2/)
