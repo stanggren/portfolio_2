@@ -33,7 +33,7 @@ function setActiveImage() {
 
 /**
  * sets color of logo in slide show container
- * @param {String} color 
+ * @param {String} color Hex color
  */
 function setLogoColor(color){
     const elementList = document.getElementById('logo-container').childNodes;

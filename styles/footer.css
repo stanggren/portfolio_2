@@ -41,8 +41,6 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 605px) {
-    footer {
-    }
     
     .contact-wrapper {
         align-items: center;
