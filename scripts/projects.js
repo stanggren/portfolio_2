@@ -1,7 +1,11 @@
 /**
+ * List of project objects
  * @type {Object[]} projects
  */
 const projects = [
+    /**
+    * @typedef {{title: string, text: string, imgSrc: string, modalImgSrc: string, alt: string}} dashboard
+    */
     dashboard = {
         title: 'Dashboard',
         text: 'A dashboard which consumes data from a document database and displays it through charts and tables. The dashboard also includes a date picker where the user can set a desired times pan for the data to be displayed in.',
@@ -10,6 +14,9 @@ const projects = [
         modalImgSrc: './images/modals/dashboard.jpg',
         alt: 'Dashboard'
     },
+    /**
+    * @typedef {{title: string, text: string, imgSrc: string, modalImgSrc: string, alt: string}} recipeSearch
+    */
     recipeSearch = {
         title: 'Recipe Search',
         text: 'Using an API from Edamam the user can search recipes and tick off ingredients from each recipe.',
@@ -18,6 +25,9 @@ const projects = [
         modalImgSrc: './images/modals/recipe-search.png',
         alt: 'Recipe Search'
     },
+    /**
+    * @typedef {{title: string, text: string, imgSrc: string, modalImgSrc: string, alt: string}} diceGame
+    */
     diceGame = {
         title: 'Dice Game',
         text: 'DOM game. The game has two players. In each turn a player roll a dice as many times as they wish. Each result gets added to their round score. First player to reach winning score wins the game.',
@@ -26,6 +36,9 @@ const projects = [
         modalImgSrc: './images/modals/dice-game.png',
         alt: 'Dice Game'
     },
+    /**
+    * @typedef {{title: string, text: string, imgSrc: string, modalImgSrc: string, alt: string}} planetJumper
+    */
     planetJumper = {
         title: 'Planet Jumper',
         text: 'A dashboard which consumes data from a document database and displays it through charts and tables. The dashboard also includes a date picker where the user can set a desired times pan for the data to be displayed in.',
